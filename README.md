@@ -1,7 +1,7 @@
 # Interactive Map Application
 
 ### To start
-* Clone this repository: `git clone https://github.com/HadoukenIO/app-template`
+* Clone this repository: `git clone https://github.com/ktongtongg/interactive-map`
 ##### NodeJS server
 * Install dependencies `cd server && npm install`
 * Start the server `npm start`
