@@ -1,0 +1,22 @@
+<p>map works!</p>
+<div class="map-container">
+    <div class="map"
+     leaflet
+     [leafletOptions]="options"
+     (leafletMapReady)="onMapReady($event)">
+</div>
+
+<div class="control-pane">
+    <div class="location-container">
+        <label>Select Location:</label>
+        <mat-radio-group [ngModel]="officeLocation" (ngModelChange)="onToggleOffice($event)">
+            <mat-radio-button value="singapore">Singapore</mat-radio-button>
+            <mat-radio-button value="london">London</mat-radio-button>
+        </mat-radio-group>
+    </div>
+    <div class="slider-container">
+        <label>Show Number of Taxis: </label>
+        <mat-slider min="1" max="10" step="1" value="1" [ngModel]="count" (ngModelChange)="onCountChanged($event)"></mat-slider>
+    </div>
+</div>
+</div>
